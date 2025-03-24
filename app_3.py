@@ -14,9 +14,11 @@ from datetime import datetime
 import pytz
 
 # Configurar la base de datos
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:yfVsMyfoDbTqzoXXUutIjZBRsuaKRaRW@autorack.proxy.rlwy.net:11691/railway"
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:aBVLOlTfGrbfmLuvxtZyMnLrmErlruGH@shuttle.proxy.rlwy.net:17212/railway"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 metadata = MetaData()
+
+
  
 # Cargar la tabla existente
 items = Table("items", metadata, autoload_with=engine)
